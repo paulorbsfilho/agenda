@@ -1,0 +1,10 @@
+{% extends 'contacts/base.html' %}
+
+{% block content %}
+    <h1>Edição de contato</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Salvar contato</button>
+{#        <button href="/" class="cancel-link">Cancelar</button>#}
+    </form>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'contacts/base.html' %}
+
+{% block content %}
+     <div class="post">
+         <a class="btn btn-default" href="{% url 'contact_edit' pk=contact.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+         <h1>{{ contact.first_name }}</h1>
+         <p>{{ contact.cell|linebreaksbr }}</p>
+         <p>{{ contact.phone|linebreaksbr }}</p>
+         <p>{{ contact.email|linebreaksbr }}</p>
+     </div>
+{% endblock %}

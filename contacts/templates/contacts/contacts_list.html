@@ -1,0 +1,11 @@
+{% extends 'contacts/base.html' %}
+
+{% block content %}
+    <a href="{% url 'contact_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    {% for contact in contacts %}
+        <div class="post">
+            <h1><a href="{% url 'contact_detail' pk=contact.pk %}">{{ contact.first_name }}</a></h1>
+            <a href="{% url 'contact_edit' contact.pk %}">Edit</a>
+        </div>
+    {% endfor %}
+{% endblock %}
