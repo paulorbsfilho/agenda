@@ -1,0 +1,9 @@
+{% extends 'contacts/base.html' %}
+
+{% block content %}
+     <div class="post">
+         <a class="btn btn-warning" href="{% url 'group_edit' pk=group.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+         <a class="btn btn-danger" href="{% url 'group_delete' pk=group.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
+         <h1>{{ group.name }}</h1>
+     </div>
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends 'contacts/base.html' %}
+
+{% block content %}
+    <a href="{% url 'group_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+    {% for group in groups %}
+        <div class="post">
+            <h1><a href="{% url 'group_detail' pk=group.pk %}">{{ group.name }}</a></h1>
+            <a href="{% url 'group_edit' group.pk %}">Edit</a>
+        </div>
+    {% endfor %}
+{% endblock %}

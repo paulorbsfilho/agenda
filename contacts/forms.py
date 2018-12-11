@@ -1,9 +1,16 @@
-from django import forms
+from django.forms import *
 
 from .models import *
 
 
-class ContactForm(forms.ModelForm):
+class ContactForm(ModelForm):
     class Meta:
         model = Contact
         fields = ('first_name', 'last_name', 'phone', 'cell', 'email')
+
+
+class GroupForm(ModelForm):
+    class Meta:
+        model = Group
+        fields = ('name', 'members')
+        widgets = {'members': CheckboxSelectMultiple()}

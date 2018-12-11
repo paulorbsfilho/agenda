@@ -1,14 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="614ea18b-eea5-4d50-80d5-85286bff924e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/contacts/static/css/contacts.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contacts/templates/contacts/contact_detail.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contacts/templates/contacts/contact_edit.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/contacts/templates/contacts/contacts_list.html" afterDir="false" />
+    <list default="true" id="614ea18b-eea5-4d50-80d5-85286bff924e" name="Default Changelist" comment="Cruds funcionando.">
+      <change afterPath="$PROJECT_DIR$/contacts/migrations/0007_auto_20181209_1455.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contacts/migrations/0008_contact_photo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contacts/migrations/0009_auto_20181209_1517.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contacts/migrations/0010_auto_20181210_1239.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contacts/migrations/0011_remove_contact_photo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contacts/migrations/0013_auto_20181211_1202.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contacts/migrations/0014_auto_20181211_1641.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contacts/migrations/0015_remove_contact_photo.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contacts/templates/contacts/contact_new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contacts/templates/contacts/group_edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contacts/templates/contacts/group_new.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/contacts/templates/contacts/groups_list.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/agenda/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/agenda/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/admin.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contacts/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/forms.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts/static/css/contacts.css" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/templates/contacts/group_detail.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contacts/templates/contacts/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/templates/contacts/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts/templates/contacts/contact_detail.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/templates/contacts/contact_detail.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contacts/templates/contacts/contact_edit.html" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/templates/contacts/contact_edit.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contacts/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/contacts/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/contacts/views.py" afterDir="false" />
     </list>
@@ -80,19 +94,37 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contacts/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+            <state relative-caret-position="120">
+              <caret line="8" column="91" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="8" selection-end-column="91" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/contact_detail.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="8" selection-start-line="8" selection-end-line="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/group_new.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/contacts/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="166">
-              <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+            <state relative-caret-position="320">
+              <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
               <folding>
-                <element signature="e#1#55#0" expanded="true" />
+                <element signature="e#0#55#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,59 +133,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/contacts/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contacts/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/contact_edit.html">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="120">
-              <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/contact_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="62" lean-forward="true" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/contacts_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="105" selection-start-line="3" selection-start-column="105" selection-end-line="3" selection-end-column="105" />
+              <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -172,31 +156,45 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>data</find>
+      <find>sta</find>
+      <find>con</find>
     </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="paulorbsfilho &lt;p4ulinho@outlook.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/agenda/settings.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9c47ec78-5c6d-4cd1-85ac-48fbd1c845b0/console_1.sql" />
         <option value="$PROJECT_DIR$/contacts/migrations/0001_initial.py" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/9c47ec78-5c6d-4cd1-85ac-48fbd1c845b0/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/contacts/models.py" />
-        <option value="$PROJECT_DIR$/contacts/admin.py" />
         <option value="$PROJECT_DIR$/agenda/urls.py" />
         <option value="$PROJECT_DIR$/contacts/static/contacts.css" />
-        <option value="$PROJECT_DIR$/contacts/forms.py" />
-        <option value="$PROJECT_DIR$/contacts/urls.py" />
         <option value="$PROJECT_DIR$/contacts/templates/contacts/contact_new.html" />
+        <option value="$PROJECT_DIR$/contacts/templates/contacts/contact_edit.html" />
+        <option value="$PROJECT_DIR$/agenda/settings.py" />
+        <option value="$PROJECT_DIR$/contacts/templates/contacts/group_edit.html" />
+        <option value="$PROJECT_DIR$/contacts/templates/contacts/group_new.html" />
+        <option value="$PROJECT_DIR$/contacts/admin.py" />
+        <option value="$PROJECT_DIR$/contacts/templates/contacts/contacts_list.html" />
+        <option value="$PROJECT_DIR$/contacts/templates/contacts/base.html" />
+        <option value="$PROJECT_DIR$/contacts/templates/contacts/group_detail.html" />
+        <option value="$PROJECT_DIR$/contacts/urls.py" />
+        <option value="$PROJECT_DIR$/contacts/templates/contacts/groups_list.html" />
+        <option value="$PROJECT_DIR$/contacts/models.py" />
+        <option value="$PROJECT_DIR$/contacts/forms.py" />
         <option value="$PROJECT_DIR$/contacts/templates/contacts/contact_detail.html" />
         <option value="$PROJECT_DIR$/contacts/views.py" />
-        <option value="$PROJECT_DIR$/contacts/templates/contacts/base.html" />
-        <option value="$PROJECT_DIR$/contacts/templates/contacts/contacts_list.html" />
-        <option value="$PROJECT_DIR$/contacts/templates/contacts/contact_edit.html" />
       </list>
     </option>
   </component>
@@ -211,36 +209,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
-            <path>
-              <item name="agenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agenda" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agenda" type="462c0819:PsiDirectoryNode" />
-              <item name="agenda" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agenda" type="462c0819:PsiDirectoryNode" />
-              <item name="contacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agenda" type="462c0819:PsiDirectoryNode" />
-              <item name="contacts" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="agenda" type="b2602c69:ProjectViewProjectNode" />
-              <item name="agenda" type="462c0819:PsiDirectoryNode" />
-              <item name="contacts" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="contacts" type="462c0819:PsiDirectoryNode" />
-            </path>
             <path>
               <item name="agenda" type="b2602c69:ProjectViewProjectNode" />
               <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
@@ -260,7 +232,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -275,6 +246,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/contacts/static" />
       <recent name="$PROJECT_DIR$/contacts/templates/contacts" />
       <recent name="$PROJECT_DIR$/contacts/static/css" />
     </key>
@@ -327,12 +299,27 @@
       <option name="presentableId" value="Default" />
       <updated>1544277832385</updated>
       <workItem from="1544277849555" duration="14011000" />
-      <workItem from="1544359454538" duration="6465000" />
+      <workItem from="1544359454538" duration="12983000" />
+      <workItem from="1544373003190" duration="1887000" />
+      <workItem from="1544442897857" duration="5692000" />
+      <workItem from="1544461453038" duration="5631000" />
+      <workItem from="1544469726877" duration="1482000" />
+      <workItem from="1544528259736" duration="7686000" />
+      <workItem from="1544542054607" duration="2374000" />
+      <workItem from="1544545072324" duration="4353000" />
     </task>
+    <task id="LOCAL-00001" summary="Cruds funcionando.">
+      <created>1544366246186</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1544366246186</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20476000" />
+    <option name="totallyTimeSpent" value="56099000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -347,7 +334,7 @@
     <frame x="0" y="-1" width="1366" height="741" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.21212122" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.23712121" />
       <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" weight="0.2090909" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -357,32 +344,54 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32956383" />
-      <window_info anchor="bottom" id="manage.py@agenda" order="7" weight="0.32847896" />
-      <window_info anchor="bottom" id="Database Console" order="8" weight="0.32956383" />
-      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="10" weight="0.32847896" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.32847896" />
-      <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Python Console" order="14" weight="0.32956383" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32956383" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32847896" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32847896" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32847896" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32847896" />
+      <window_info anchor="bottom" id="manage.py@agenda" order="14" weight="0.32847896" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info anchor="right" id="Database" order="4" weight="0.32954547" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49879518" visible="true" weight="0.23712121" />
+      <window_info id="Structure" order="1" sideWeight="0.50120485" side_tool="true" weight="0.2090909" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32956383" />
+      <window_info anchor="bottom" id="Database Console" order="7" weight="0.32956383" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" weight="0.32847896" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32847896" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="12" weight="0.32847896" />
+      <window_info anchor="bottom" id="Python Console" order="13" weight="0.32847896" />
+      <window_info anchor="bottom" id="manage.py@agenda" order="14" weight="0.32847896" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32954547" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cruds funcionando." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cruds funcionando." />
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/agenda/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="39" column="13" lean-forward="true" selection-start-line="39" selection-start-column="13" selection-end-line="39" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/9c47ec78-5c6d-4cd1-85ac-48fbd1c845b0/console_1.sql" />
     <entry file="file://$PROJECT_DIR$/contacts/migrations/0001_initial.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -422,98 +431,158 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/contacts/static/css/contacts.css" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/django/forms/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacts/static/uploads/1526667424817_9Sn1XTo.jpg" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/django/core/handlers/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="133" lean-forward="true" selection-start-line="133" selection-end-line="133" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacts/static/uploads/1526667424817.jpg" />
+    <entry file="file://$PROJECT_DIR$/contacts/static/uploads/media/contacts/static/uploads/1526667424817.jpg" />
+    <entry file="file://$PROJECT_DIR$/venv/lib/python3.5/site-packages/django/templatetags/static.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="143" column="13" selection-start-line="143" selection-start-column="13" selection-end-line="143" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/agenda/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1950">
+          <caret line="133" column="44" lean-forward="true" selection-start-line="133" selection-start-column="44" selection-end-line="133" selection-end-column="44" />
+          <folding>
+            <element signature="e#307#316#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/agenda/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
-          <caret line="19" column="38" lean-forward="true" selection-start-line="19" selection-start-column="38" selection-end-line="19" selection-end-column="38" />
+          <caret line="19" column="39" lean-forward="true" selection-start-line="19" selection-start-column="39" selection-end-line="19" selection-end-column="39" />
           <folding>
             <element signature="e#630#662#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/contact_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="14" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/group_edit.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="71" selection-start-line="6" selection-start-column="71" selection-end-line="6" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/contact_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="14" lean-forward="true" selection-end-line="9" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/contacts/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="28" lean-forward="true" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
+        <state relative-caret-position="135">
+          <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contacts/static/css/contacts.css">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/contact_new.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="16" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contacts/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contacts/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="66" selection-start-line="7" selection-start-column="66" selection-end-line="7" selection-end-column="66" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contacts/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="23" lean-forward="true" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/contacts_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="105" selection-start-line="3" selection-start-column="105" selection-end-line="3" selection-end-column="105" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/contact_detail.html">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="62" lean-forward="true" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+          <caret line="4" column="26" lean-forward="true" selection-start-line="4" selection-start-column="26" selection-end-line="4" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
-          <caret line="11" column="45" lean-forward="true" selection-start-line="11" selection-start-column="12" selection-end-line="11" selection-end-column="45" />
+          <caret line="11" column="32" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacts/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/groups_list.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/group_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="33" lean-forward="true" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/group_new.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="12" lean-forward="true" selection-start-line="3" selection-start-column="12" selection-end-line="3" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacts/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="91" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="8" selection-end-column="91" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacts/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/contact_detail.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/contacts/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="21" column="37" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+        <state relative-caret-position="320">
+          <caret line="73" column="24" selection-start-line="73" selection-start-column="24" selection-end-line="73" selection-end-column="24" />
           <folding>
-            <element signature="e#1#55#0" expanded="true" />
+            <element signature="e#0#55#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/contacts/templates/contacts/contact_edit.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="10" selection-start-line="8" selection-start-column="10" selection-end-line="8" selection-end-column="10" />
         </state>
       </provider>
     </entry>
