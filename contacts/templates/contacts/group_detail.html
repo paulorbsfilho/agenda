@@ -5,5 +5,7 @@
          <a class="btn btn-warning" href="{% url 'group_edit' pk=group.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
          <a class="btn btn-danger" href="{% url 'group_delete' pk=group.pk %}"><span class="glyphicon glyphicon-trash"></span></a>
          <h1>{{ group.name }}</h1>
-     </div>
+         {% for member in group.members.all %}
+                <a href="{% url 'contact_detail' pk=member.pk %}">{{ member }}</a>
+         {% endfor %}
 {% endblock %}
